@@ -1,0 +1,7 @@
+<div>
+    <app-menu (loginEvent)="showComponent('login')" (logoutEvent)="onLogout()"/>
+    <app-welcome *ngIf="componentToShow == 'welcome'"/>
+    <app-login-form *ngIf="componentToShow == 'login'" (onSubmitLoginEvent)="onLogin($event)"/>
+    <app-orangeobject *ngIf="componentToShow == 'objects'"/>
+  
+  </div>

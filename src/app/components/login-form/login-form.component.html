@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-3">
+    <form (ngSubmit)="onSubmitLogin()" #loginForm="ngForm">
+      <div class="mb-3">
+        <label for="login" class="form-label">Login</label>
+        <input type="text" class="form-control" id="login" [(ngModel)]="login" name="login">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Hasło</label>
+        <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password"
+          class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Zaloguj</button>
+    </form>
+  </div>
+</div>

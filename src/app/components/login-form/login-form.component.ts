@@ -16,7 +16,7 @@ export class LoginFormComponent {
   password: string = "";
 
   onSubmitLogin(): void {
-    this.onSubmitLoginEvent.emit({"login": this.login, "password": this.password})
+    this.onSubmitLoginEvent.emit({ "login": this.login, "password": this.password })
   }
 
 }
